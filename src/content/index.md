@@ -2,7 +2,7 @@
 title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - bash 
+  - bash
   - ruby
   - python
   - javascript
@@ -67,7 +67,7 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 
 # Kittens
 
-## Get All Kittens
+## Get all kittens
 
 ```ruby
 require 'kittn'
@@ -95,7 +95,7 @@ let api = kittn.authorize('meowmeowmeow');
 let kittens = api.kittens.get();
 ```
 
-> The above command returns JSON structured like this:
+> The preceding command returns JSON structured like this:
 
 ```json
 [
@@ -118,11 +118,11 @@ let kittens = api.kittens.get();
 
 This endpoint retrieves all kittens.
 
-### HTTP Request
+### HTTP request
 
 `GET http://example.com/api/kittens`
 
-### Query Parameters
+### Query parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -133,7 +133,7 @@ available | true | If set to false, the result will include kittens that have al
 Remember — a happy kitten is an authenticated kitten!
 </aside>
 
-## Get a Specific Kitten
+## Get a specific kitten
 
 ```ruby
 require 'kittn'
@@ -161,7 +161,7 @@ let api = kittn.authorize('meowmeowmeow');
 let max = api.kittens.get(2);
 ```
 
-> The above command returns JSON structured like this:
+> The preceding command returns JSON structured like this:
 
 ```json
 {
@@ -181,13 +181,13 @@ This endpoint retrieves a specific kitten.
 
 `GET http://example.com/kittens/<ID>`
 
-### URL Parameters
+### URL parameters
 
 Parameter | Description
 --------- | -----------
 ID | The ID of the kitten to retrieve
 
-## Delete a Specific Kitten
+## Delete a specific kitten
 
 ```ruby
 require 'kittn'
@@ -216,7 +216,7 @@ let api = kittn.authorize('meowmeowmeow');
 let max = api.kittens.delete(2);
 ```
 
-> The above command returns JSON structured like this:
+> The preceding command returns JSON structured like this:
 
 ```json
 {
@@ -227,11 +227,11 @@ let max = api.kittens.delete(2);
 
 This endpoint deletes a specific kitten.
 
-### HTTP Request
+### HTTP request
 
 `DELETE http://example.com/kittens/<ID>`
 
-### URL Parameters
+### URL parameters
 
 Parameter | Description
 --------- | -----------
